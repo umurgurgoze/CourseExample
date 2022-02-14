@@ -17,11 +17,13 @@ namespace EntityLayer.Concrete
         public string PatientIdentityNumber { get; set; }
         public DateTime AppointmentDate { get; set; }
         public bool AppointmentStatus { get; set; }
-        public List<Doctor> Doctors { get; set; }
-        public int ClinicId { get; set; }
-        public Clinic Clinic { get; set; }
         public int DoctorId { get; set; }
         public Doctor Doctor { get; set; }
+
+
+
+
+
 
 
 

@@ -13,8 +13,10 @@ namespace EntityLayer.Concrete
         public int ClinicId { get; set; }
         public string ClinicName { get; set; }
         public bool ClinicStatus { get; set; }
-        public List<Doctor> Doctors{ get; set; }
-        public List<Appointment> Appointments { get; set; }
+
+        public List<Doctor> Doctors { get; set; }
+
+
 
     }
 }

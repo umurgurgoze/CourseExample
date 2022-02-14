@@ -2010,6 +2010,44 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataAccessLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        }
+      },
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
+        }
       }
     }
   },
@@ -7138,10 +7176,26 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BusinessLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
@@ -7156,11 +7210,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\STUDENT2\\Desktop\\ExampleProject\\ExampleProject\\ExampleProject.csproj",
+      "projectUniqueName": "C:\\Users\\STUDENT2\\Desktop\\Ek Çalışma\\ExampleProject\\ExampleProject\\ExampleProject.csproj",
       "projectName": "ExampleProject",
-      "projectPath": "C:\\Users\\STUDENT2\\Desktop\\ExampleProject\\ExampleProject\\ExampleProject.csproj",
+      "projectPath": "C:\\Users\\STUDENT2\\Desktop\\Ek Çalışma\\ExampleProject\\ExampleProject\\ExampleProject.csproj",
       "packagesPath": "C:\\Users\\STUDENT2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\STUDENT2\\Desktop\\ExampleProject\\ExampleProject\\obj\\",
+      "outputPath": "C:\\Users\\STUDENT2\\Desktop\\Ek Çalışma\\ExampleProject\\ExampleProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7180,7 +7234,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\STUDENT2\\Desktop\\Ek Çalışma\\ExampleProject\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\STUDENT2\\Desktop\\Ek Çalışma\\ExampleProject\\BusinessLayer\\BusinessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
