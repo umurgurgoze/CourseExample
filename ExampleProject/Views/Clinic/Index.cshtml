@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Concrete
+@model List<Clinic>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Klinik Adı</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ClinicId</td>
+            <td>@item.ClinicName</td>
+            <td><a href="/Clinic/Update/@item.ClinicId" class="btn btn-primary">Güncelle</a></td>
+            <td><a href="/Clinic/Delete/@item.ClinicId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Clinic/Add/" class="btn btn-success">Ekle</a>
+

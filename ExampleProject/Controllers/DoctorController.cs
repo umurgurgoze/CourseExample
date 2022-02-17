@@ -1,5 +1,8 @@
-﻿using BusinessLayer.Concrete;
+﻿
+using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,10 +13,12 @@ namespace ExampleProject.Controllers
 {
     public class DoctorController : Controller
     {
-        GenericManager<Doctor> gm = new GenericManager<Doctor>;
+        DoctorManager dm = new DoctorManager(new EfDoctorRepository());
+        [Authorize]
         public IActionResult Index()
         {
-            return View();
+            var values = dm.GetList();
+            return View(values);
         }
     }
 }

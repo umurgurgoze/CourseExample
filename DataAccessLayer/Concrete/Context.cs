@@ -17,5 +17,6 @@ namespace DataAccessLayer.Concrete
 		public DbSet<Appointment> Appointments { get; set; }
 		public DbSet<Clinic> Clinics{ get; set; }
 		public DbSet<Doctor> Doctors { get; set; }
-	}
+        public DbSet<AdminUser> AdminUsers { get; set; }
+    }
 }

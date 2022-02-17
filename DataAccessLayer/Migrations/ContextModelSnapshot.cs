@@ -19,6 +19,30 @@ namespace DataAccessLayer.Migrations
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("EntityLayer.Concrete.AdminUser", b =>
+                {
+                    b.Property<int>("AdminId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AdminName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("AdminPassword")
+                        .HasColumnType("int");
+
+                    b.Property<string>("AdminSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AdminUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AdminId");
+
+                    b.ToTable("AdminUsers");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Appointment", b =>
                 {
                     b.Property<int>("AppointmentId")
