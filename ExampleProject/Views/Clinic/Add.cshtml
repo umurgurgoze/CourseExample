@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<body>
+    <div class="comment-top">
+        <h4>Yeni Klinik Kayıt</h4><br />
+        <div class="col-xs-7">
+            <form action="/Clinic/Add/" method="post">
+                <input class="form-control" type="text" name="ClinicName" placeholder="Klinik Adı" required=""><br />
+                <input class="form-control" type="text" name="ClinicStatus" placeholder="Klinik Durumu 0/1" required=""><br />
+                <button type="submit" class="btn btn-primary submit" style="float:left">Kayıt Oluştur</button>
+
+            </form>
+        </div>
+        </div>
+</body>
+

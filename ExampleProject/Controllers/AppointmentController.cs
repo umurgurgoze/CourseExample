@@ -19,5 +19,6 @@ namespace ExampleProject.Controllers
             var values = apm.GetList();
             return View(values);
         }
+        
     }
 }

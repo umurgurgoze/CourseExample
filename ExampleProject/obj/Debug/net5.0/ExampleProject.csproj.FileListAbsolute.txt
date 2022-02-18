@@ -302,5 +302,7 @@ C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\bin\Debug\
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\bin\Debug\net5.0\EntityLayer.pdb
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Clinic\Index.cshtml.g.cs
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Appointment\Index.cshtml.g.cs
-C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Doctor\Add.cshtml.g.cs
+C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Clinic\Add.cshtml.g.cs
+C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Doctor\Update.cshtml.g.cs

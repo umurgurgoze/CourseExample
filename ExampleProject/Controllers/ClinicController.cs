@@ -20,5 +20,21 @@ namespace ExampleProject.Controllers
             var values = cm.GetList();
             return View(values);
         }
+        public IActionResult Add()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Add(Clinic clinic)
+        {
+            cm.TAdd(clinic);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(int id)
+        {
+            var value = cm.GetById(id);
+            cm.TDelete(value);
+            return RedirectToAction("Index");
+        }
     }
 }

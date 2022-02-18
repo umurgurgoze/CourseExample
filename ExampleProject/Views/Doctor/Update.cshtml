@@ -1,0 +1,21 @@
+﻿ 
+@model EntityLayer.Concrete.Doctor
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="comment-top" align="center">
+    <h4>Kayıt Güncelle</h4><br />
+    <div class="col-xs-7">
+        <form action="#" method="post">            
+            <input class="form-control" type="number" name="DoctorId" required=""><br />
+            <input class="form-control" type="text" name="DoctorTitle" placeholder="Ünvanı" required=""><br />
+            <input class="form-control" type="text" name="DoctorName" placeholder="Adı" required=""><br />
+            <input class="form-control" type="text" name="DoctorSurname" placeholder="Soyadı" required=""><br />
+            <input class="form-control" type="text" name="ClinicId" placeholder="Klinik" required=""><br />
+            <button type="submit" name="btn1" class="btn btn-primary submit" style="float:left">Güncelle</button>
+        </form>
+    </div>
+</div>
+
