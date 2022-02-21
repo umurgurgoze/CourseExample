@@ -1,0 +1,22 @@
+﻿@model EntityLayer.Concrete.Clinic
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="comment-top">
+    <h4>Kayıt Güncelle</h4><br />
+    <div class="col-xs-7">
+        <form action="#" method="post">
+            ID:<br />
+            @Html.TextBoxFor(x => x.ClinicId, new { @class = "form-control", placeholder = "Id" })
+            Klinik:<br />
+            @Html.TextBoxFor(x => x.ClinicName, new { @class = "form-control", placeholder = "Ünvan" })
+            Klinik Durumu:<br />
+            @Html.TextBoxFor(x => x.ClinicStatus, new { @class = "form-control", placeholder = "Ad" })<br />           
+            
+
+            <button type="submit" name="btn1" class="btn btn-primary submit" style="float:left">Güncelle</button>
+        </form>
+    </div>
+</div>

@@ -30,11 +30,22 @@ namespace ExampleProject.Controllers
             cm.TAdd(clinic);
             return RedirectToAction("Index");
         }
+        public IActionResult Update(int id)
+        {
+            var updating = cm.GetById(id);
+            return View(updating);
+        }
+        [HttpPost]
+        public IActionResult Update(Clinic clinic)
+        {
+            cm.TUpdate(clinic);
+            return RedirectToAction("Index");
+        }
         public IActionResult Delete(int id)
         {
             var value = cm.GetById(id);
             cm.TDelete(value);
             return RedirectToAction("Index");
-        }
+        }        
     }
 }

@@ -11,10 +11,11 @@
             <input class="form-control" type="text" name="DoctorTitle" placeholder="Ünvanı" required=""><br />
             <input class="form-control" type="text" name="DoctorName" placeholder="Adı" required=""><br />
             <input class="form-control" type="text" name="DoctorSurname" placeholder="Soyadı" required=""><br />
-            <input class="form-control" type="text" name="ClinicId" placeholder="Klinik" required=""><br />
+            <input class="form-control" type="text" name="ClinicId" placeholder="Klinik" required=""><br />               
+            @Html.DropDownList("Kategoriler",new SelectList(ViewBag.Clinic,"Value","Text"),"Kategori Seçiniz",new { @class="form-control" })<br />           
             <button type="submit" class="btn btn-primary submit" style="float:left">Kayıt Oluştur</button>
 
-        </form>
-    </div>
-</div>
+                </form>
+            </div>
+        </div>
 

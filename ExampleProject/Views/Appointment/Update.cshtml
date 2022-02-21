@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concrete.Appointment
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="comment-top">
+    <h4>Kayıt Güncelle</h4><br />
+    <div class="col-xs-7">
+        <form action="#" method="post">
+            ID:<br />
+            @Html.TextBoxFor(x => x.AppointmentId, new { @class = "form-control", placeholder = "Id" })
+            Hasta Adı:<br />
+            @Html.TextBoxFor(x => x.PatientName, new { @class = "form-control", placeholder = "Ünvan" })
+            Hasta Soyadı:<br />
+            @Html.TextBoxFor(x => x.PatientSurname, new { @class = "form-control", placeholder = "Ad" })<br />
+            Hasta Tc Kimlik Numarası:<br />
+            @Html.TextBoxFor(x => x.PatientIdentityNumber, new { @class = "form-control", placeholder = "Ad" })<br />
+            Hasta Telefon Numarası:<br />
+            @Html.TextBoxFor(x => x.PatientPhone, new { @class = "form-control", placeholder = "Ad" })<br />
+            Randevu Tarihi:<br />
+            @Html.TextBoxFor(x => x.AppointmentDate, new { @class = "form-control", placeholder = "Ad" })<br />
+            Randevu Durumu:<br />
+            @Html.TextBoxFor(x => x.AppointmentStatus, new { @class = "form-control", placeholder = "Ad" })<br />
+            Doktor:
+            @Html.TextBoxFor(x => x.DoctorId, new { @class = "form-control", placeholder = "Ad" })<br />
+            
+
+
+            <button type="submit" name="btn1" class="btn btn-primary submit" style="float:left">Güncelle</button>
+        </form>
+    </div>
+</div>
+
