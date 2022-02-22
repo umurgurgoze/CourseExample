@@ -33,4 +33,3 @@ C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\DataAccessLayer\obj\Debug
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
-C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete

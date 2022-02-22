@@ -13,7 +13,7 @@ namespace ExampleProject.Controllers
     {
         AppointmentManager apm = new AppointmentManager(new EfAppointmentRepository());
         DoctorManager dm = new DoctorManager(new EfDoctorRepository());
-
+        [HttpPost]
         public IActionResult Add(Appointment appointment)
         {
             apm.TAdd(appointment);

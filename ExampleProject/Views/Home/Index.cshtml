@@ -27,10 +27,9 @@
         <!-- header -->
         <div class="container">
             <div class="w3_agile_logo">
-                <h1><a href="/Home/Index"><i class="agileits-logo fa fa-plus" aria-hidden="true"></i>Medicate</a></h1>
-
-            </div>
-            <br /> <a href="/Admin/Index" class="btn btn-primary">Yönetim Paneli</a>
+                <h1><a href="/Home/Index" style="float:left"><i class="agileits-logo fa fa-plus" aria-hidden="true"></i>Medicate</a></h1>
+                <h1><a href="/Admin/Index" class="btn btn-primary" style="float:right">Yönetim Paneli</a></h1>
+            </div>            
             <div class="agileits_w3layouts_nav">
             </div>
         </div>
@@ -62,26 +61,26 @@
                 <div class="col-md-4 col-sm-4 col-xs-6 wthree-s1 ">
                     <span class="fa fa-medkit sicon" aria-hidden="true"></span>
                     <h4>İlk Yardım Ekibi</h4>
-                    <p>Praesent imperdiet mollis odio,eget sodales tortor porttitor.Vac turpis egestas tortor.eget sodales tortor porttitor</p>
-                    <div class="w3-button">
+                    <p>İlk yardım ekibi; herhangi bir kaza ya da yaşamı tehlikeye düşüren bir durumda hastaya/yaralıya, sağlık görevlilerinin yardımı sağlanıncaya kadar hayatının kurtarılması</p>
+                    @*<div class="w3-button">
                         <a href="#" data-toggle="modal" data-target="#myModal">Devamını Oku</a>
-                    </div>
+                    </div>*@
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-6 wthree-s1  s1  s1-active">
+                <div class="col-md-4 col-sm-4 col-xs-6 wthree-s1">
                     <span class="fa fa-user-md sicon" aria-hidden="true"></span>
                     <h4>Uzman Kadromuz</h4>
-                    <p>Praesent imperdiet mollis odio,eget sodales tortor porttitor.Vac turpis egestas tortor.eget sodales tortor porttitor</p>
-                    <div class="w3-button">
+                    <p>Uzman kadromuz, güleryüzlü hizmet anlayışımız ve size özel çözümlerimizle, bir telefon ve bir e-mail kadar yakınız.</p>
+                    @*<div class="w3-button">
                         <a href="#" data-toggle="modal" data-target="#myModal">Devamını Oku</a>
-                    </div>
+                    </div>*@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6 wthree-s1">
                     <span class="fa fa-ambulance sicon" aria-hidden="true"></span>
                     <h4>Acil Birimimiz</h4>
-                    <p>Praesent imperdiet mollis odio,eget sodales tortor porttitor.Vac turpis egestas tortor.eget sodales tortor porttitor</p>
-                    <div class="w3-button">
+                    <p>Acil servis, hastanelerin ve diğer sağlık kuruluşlarının acil tıbbi yardım gerektiren hastalara hizmet vermek amacıyla kurulan bir sağlık birimidir.</p>
+                    @*<div class="w3-button">
                         <a href="#" data-toggle="modal" data-target="#myModal">Devamını Oku</a>
-                    </div>
+                    </div>*@
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -125,19 +124,8 @@
                                         <option value="3">23.02.2022</option>
                                         <option value="4">24.02.2022</option>
                                     </select>*@
-
-                                <select name="DoctorId" required="" class="form-control">
-                                    <option value="">Doktor Seçiniz</option>
-                                    @foreach (var item in Model)
-                                    {
-                                        <option value="@item.DoctorId">@item.DoctorTitle @item.DoctorName @item.DoctorSurname Klinik = @item.ClinicId</option>
-                                    }
-
-                                    @*<option value="2">Genel Cerrahi</option>
-                                        <option value="3">Beslenme Ve Diyetetik</option>
-                                        <option value="4">Ortopedi</option>*@
-                                </select>
-                                <input type="date" name="AppointmentDate" class="form-control" /><br />
+                                @await Component.InvokeAsync("SelectDoctor")
+                                <input type="date" name="AppointmentDate" class="form-control"  /><br />
                                 <button formmethod="post" class="btn btn-success">Randevu Oluştur</button>
                                 @*<input type="submit" value="request appointment">*@
                             </form>

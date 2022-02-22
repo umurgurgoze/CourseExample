@@ -1,0 +1,17 @@
+﻿@using EntityLayer.Concrete
+@model List<Doctor>
+@{
+    Layout = null;
+}
+
+<select name="DoctorId" required="" class="form-control">
+    <option value="">Doktor Seçiniz</option>
+    @foreach (var item in Model)
+    {
+        <option value="@item.DoctorId">@item.DoctorTitle @item.DoctorName @item.DoctorSurname Klinik = @item.ClinicId</option>
+    }
+
+    @*<option value="2">Genel Cerrahi</option>
+        <option value="3">Beslenme Ve Diyetetik</option>
+        <option value="4">Ortopedi</option>*@
+</select>

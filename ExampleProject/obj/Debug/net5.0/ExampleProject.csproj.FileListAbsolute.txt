@@ -308,4 +308,4 @@ C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Doctor\Update.cshtml.g.cs
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Clinic\Update.cshtml.g.cs
 C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Appointment\Update.cshtml.g.cs
-C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Shared\Home\Default.cshtml.g.cs
+C:\Users\STUDENT2\Desktop\Ek Çalışma\ExampleProject\ExampleProject\obj\Debug\net5.0\Razor\Views\Shared\Components\SelectDoctor\Default.cshtml.g.cs
