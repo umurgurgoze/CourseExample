@@ -1,2 +1,2 @@
 # CourseExample
-Creation an appointment system of hospital
+Created an appointment system of hospital
